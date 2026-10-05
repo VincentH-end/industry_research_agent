@@ -1,0 +1,39 @@
+[
+  {
+    "id": "low_altitude",
+    "request": {"industry":"低空经济","question":"分析中国低空经济的发展阶段、商业模式和监管风险，不要捏造市场规模。","use_memory":false},
+    "expected_quality": "区分技术试点和规模商业化；说明客户与付费者；涉及空域、适航和运营许可；没有证据不得给出市场规模。",
+    "expected_topics": {"lifecycle":["试点","商业化"],"business_model":["付费者"],"drivers_risks":["适航"]},
+    "require_evidence": true
+  },
+  {
+    "id": "industrial_robot",
+    "request": {"industry":"工业机器人","question":"分析工业机器人产业链、竞争结构及盈利方式，区分设备收入和集成服务。","use_memory":false},
+    "expected_quality": "覆盖核心零部件、整机与系统集成；区分收入结构；生命周期判断需采用或产能证据。",
+    "expected_topics": {"market":["竞争"],"business_model":["零部件","系统集成","设备"]},
+    "require_evidence": true
+  },
+  {
+    "id": "enterprise_saas",
+    "request": {"industry":"企业SaaS","question":"分析企业SaaS商业模式，重点讨论订阅收入、续费和获客成本，并说明风险。","use_memory":false},
+    "expected_quality": "解释订阅、续费、获客成本与单位经济性；不把分析性评分当作财务统计；引用当前证据。",
+    "expected_topics": {"business_model":["订阅","续费","获客成本"],"drivers_risks":["风险"]},
+    "require_evidence": true
+  },
+  {
+    "id": "conflicting_data",
+    "request": {"industry":"动力电池","question":"不同来源的市场规模口径冲突时，如何给出可复核的动力电池行业分析？","use_memory":false},
+    "expected_quality": "明确披露口径冲突；保留不同来源；不强行平均不可比数字，给出补充证据建议。",
+    "expected_topics": {"market":["口径","冲突"]},
+    "require_evidence": true,
+    "require_conflict_disclosure": true
+  },
+  {
+    "id": "missing_evidence",
+    "request": {"industry":"未知新兴产业","question":"没有行业数据时能否给出市场规模和投资结论？","use_memory":false},
+    "expected_quality": "明确缺乏事实证据；进入演示或拒绝给出事实性数字；披露低置信度；提供补充证据方向。",
+    "expected_topics": {},
+    "require_evidence": false,
+    "expect_demo": true
+  }
+]

@@ -1,0 +1,39 @@
+[project]
+name = "industry-research-agent"
+version = "0.1.0"
+description = "Evidence-grounded multi-agent industry research API and dashboard"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.12.3",
+    "fastapi>=0.115.0",
+    "httpx>=0.27.2",
+    "openai>=1.51.0",
+    "pydantic>=2.9.2",
+    "pydantic-settings>=2.5.2",
+    "python-dotenv>=1.0.1",
+    "uvicorn[standard]>=0.30.6",
+]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["app"]
+
+[tool.setuptools.package-data]
+app = ["eval_cases.json"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.3",
+    "pytest-asyncio>=0.24.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

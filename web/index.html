@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>行业洞察 Agent · 新建研究</title><link rel="stylesheet" href="/static/styles.css"></head>
+<body><div class="shell"><header class="hero">
+  <nav><span class="brand-mark">IA</span><span>INDUSTRY AGENT</span><span class="status" id="mode">连接中</span></nav>
+  <div class="hero-copy"><p class="eyebrow">METHOD-FIRST RESEARCH</p>
+    <h1>先找到研究方法，<br><em>再分析具体行业。</em></h1>
+    <p class="intro">方法知识获取 Agent 指导任务设计；行业来源验证事实。报告在多子页中按固定研究栏目展示。</p></div>
+  <form id="research-form" class="query-card">
+    <label class="main-input">研究行业<input id="industry" required minlength="2" maxlength="80" placeholder="例如：低空经济、工业机器人"></label>
+    <div class="field-row"><label>地区<input id="region" value="中国" maxlength="50"></label>
+      <label>分析周期<input id="horizon" value="未来3-5年" maxlength="50"></label></div>
+    <label>行业证据锚定网站 <span>域名或完整 URL，逗号分隔</span><input id="anchors" placeholder="stats.gov.cn, miit.gov.cn"></label>
+    <details><summary>具体问题、上下文与凭证</summary>
+      <label>具体问题<input id="question" maxlength="1000" placeholder="例如：重点分析商业模式和监管风险"></label>
+      <label>会话 ID<input id="session-id" maxlength="80" pattern="[A-Za-z0-9_-]+" placeholder="留空自动创建；填写旧 ID 继续研究"></label>
+      <label><input id="use-memory" type="checkbox" checked style="width:auto"> 使用持久化记忆</label>
+      <label><input id="use-rag" type="checkbox" checked style="width:auto"> 复用已有报告与检索相关行业资料</label>
+      <label><input id="force-refresh" type="checkbox" style="width:auto"> 强制重新分析（跳过完整报告缓存）</label>
+      <label>API Key<input id="api-key" type="password" autocomplete="off" placeholder="X-API-Key"></label>
+    </details>
+    <button id="submit" type="submit"><span>生成研究报告</span><b>→</b></button>
+  </form><div class="hero-orbit" aria-hidden="true"></div></header>
+  <main><section id="progress" class="progress-panel hidden">
+    <div class="progress-head"><span>AGENT WORKFLOW</span><strong id="progress-label">正在准备</strong></div>
+    <div class="progress-track"><i id="progress-bar"></i></div><div id="agent-list" class="agent-list"></div>
+  </section><section class="empty-state"><span>01</span><p>获取方法知识</p><i></i><span>02</span><p>规划并行任务</p><i></i><span>03</span><p>取证分析与制图</p><i></i><span>04</span><p>分子页阅读</p></section></main>
+</div><footer>INDUSTRY AGENT · METHODS ≠ INDUSTRY FACTS</footer><script src="/static/app.js"></script></body></html>

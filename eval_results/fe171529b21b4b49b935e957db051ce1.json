@@ -1,0 +1,4694 @@
+{
+  "run_id": "fe171529b21b4b49b935e957db051ce1",
+  "mode": "fixture",
+  "disclaimer": "fixture uses synthetic adapters; it does NOT measure real model quality",
+  "pass_rate": 1.0,
+  "results": [
+    {
+      "case_id": "low_altitude",
+      "question": {
+        "industry": "低空经济",
+        "region": "中国",
+        "horizon": "未来3-5年",
+        "anchor_sites": [],
+        "question": "分析中国低空经济的发展阶段、商业模式和监管风险，不要捏造市场规模。",
+        "session_id": null,
+        "use_memory": false
+      },
+      "expected_quality": "区分技术试点和规模商业化；说明客户与付费者；涉及空域、适航和运营许可；没有证据不得给出市场规模。",
+      "execution_mode": "fixture",
+      "score": 1.0,
+      "passed": true,
+      "checks": {
+        "required_sections": true,
+        "method_traceability": true,
+        "citation_integrity": true,
+        "numeric_provenance": true,
+        "limitations": true,
+        "live_evidence": true,
+        "finding_support": true,
+        "topic:lifecycle:试点": true,
+        "topic:lifecycle:商业化": true,
+        "topic:business_model:付费者": true,
+        "topic:drivers_risks:适航": true
+      },
+      "trajectory": {
+        "span_success": 1.0,
+        "dependency_order": 1.0,
+        "parallel_overlap": 1.0
+      },
+      "failures": [],
+      "actual_report": {
+        "report_id": "a824db2098634bffbe7c04294826bb57",
+        "industry": "低空经济",
+        "region": "中国",
+        "horizon": "未来3-5年",
+        "generated_at": "2026-09-15T05:35:23.778628+00:00",
+        "mode": "live",
+        "executive_summary": "合成回归报告，仅用于测试编排，不是真实行业分析。",
+        "lifecycle_stage": "验证阶段",
+        "lifecycle_score": 40.0,
+        "plan": {
+          "industry_definition": "界定中国低空经济的产品、客户、地区和统计周期。",
+          "value_chain": [
+            "投入与技术",
+            "产品与服务",
+            "渠道与集成",
+            "终端客户",
+            "售后与配套"
+          ],
+          "hypotheses": [
+            "需求是否进入规模扩散阶段",
+            "利润由价值链哪一环获取",
+            "政策或技术变化是否改变竞争格局"
+          ],
+          "tasks": [
+            "Determine lifecycle stage from adoption, diffusion and maturity indicators.",
+            "Determine market scope, segments, growth and competitive forces.",
+            "Map value chain, buyer, payer, revenue, cost and unit economics.",
+            "Test policy, demand, technology and financial drivers; build scenarios."
+          ],
+          "evidence_gaps": [
+            "同口径历史市场数据",
+            "企业财务与客户数据",
+            "可验证的政策与技术时间线"
+          ],
+          "task_specs": [
+            {
+              "key": "lifecycle",
+              "objective": "Determine lifecycle stage from adoption, diffusion and maturity indicators.",
+              "method_ids": [
+                "M2",
+                "M3"
+              ],
+              "evidence_needed": [
+                "adoption series",
+                "technology standards",
+                "firm entry and exit"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "market",
+              "objective": "Determine market scope, segments, growth and competitive forces.",
+              "method_ids": [
+                "M1",
+                "M3"
+              ],
+              "evidence_needed": [
+                "industry classification",
+                "output and value added",
+                "rival and substitute evidence"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "business_model",
+              "objective": "Map value chain, buyer, payer, revenue, cost and unit economics.",
+              "method_ids": [
+                "M1",
+                "M4"
+              ],
+              "evidence_needed": [
+                "revenue and cost data",
+                "buyer and payer interviews",
+                "firm performance"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "drivers_risks",
+              "objective": "Test policy, demand, technology and financial drivers; build scenarios.",
+              "method_ids": [
+                "M2",
+                "M4"
+              ],
+              "evidence_needed": [
+                "policy documents",
+                "demand indicators",
+                "scenario assumptions"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            }
+          ]
+        },
+        "methodology_guide": {
+          "objective": "为中国低空经济研究设计可复核的任务与证据标准",
+          "principles": [
+            {
+              "name": "先界定行业口径",
+              "instruction": "定义产品、客户、地区、分类代码和统计周期，再比较市场数据。",
+              "method_ids": [
+                "M3"
+              ]
+            },
+            {
+              "name": "竞争结构不等于竞品名单",
+              "instruction": "分别调查现有竞争、潜在进入、替代品、买方和供应方议价能力。",
+              "method_ids": [
+                "M1"
+              ]
+            },
+            {
+              "name": "技术成熟度须有观测指标",
+              "instruction": "区分发明、实际应用和扩散；寻找采用率、标准化和企业创新证据。",
+              "method_ids": [
+                "M2"
+              ]
+            },
+            {
+              "name": "商业模式须回到企业层面",
+              "instruction": "核查客户、付费者、成本、利润、融资约束及企业经营表现。",
+              "method_ids": [
+                "M4"
+              ]
+            }
+          ],
+          "workflow": [
+            "方法知识获取与适用性筛选",
+            "界定行业边界、指标口径和待验证假设",
+            "采集具体行业事实并登记来源",
+            "并行分析生命周期、市场竞争、商业模式、驱动与风险",
+            "根据已验证指标制图、主 Agent 汇总并质量评测"
+          ],
+          "source_ids": [
+            "M3",
+            "M1",
+            "M2",
+            "M4"
+          ],
+          "limitations": [
+            "目录摘要仅用于方法规划；具体行业事实必须另找 S- 来源。"
+          ]
+        },
+        "knowledge_sources": [
+          {
+            "id": "M1",
+            "title": "The Five Competitive Forces That Shape Strategy — Michael E. Porter (2008)",
+            "url": "https://hbr.org/2008/01/the-five-competitive-forces-that-shape-strategy",
+            "source_type": "book_or_article",
+            "usage": "Use five-forces questions to map rivalry, entrants, substitutes, buyers and suppliers.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M2",
+            "title": "Oslo Manual 2018 — OECD/Eurostat",
+            "url": "https://www.oecd.org/en/publications/oslo-manual-2018_9789264304604-en.html",
+            "source_type": "manual",
+            "usage": "Define innovation and adoption indicators before judging technology maturity.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M3",
+            "title": "Structural Analysis Database (STAN) — OECD",
+            "url": "https://www.oecd.org/en/data/datasets/structural-analysis-database.html",
+            "source_type": "data_method",
+            "usage": "Harmonise industry classification, output, value added, labour and productivity comparisons.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M4",
+            "title": "Enterprise Surveys — World Bank",
+            "url": "https://microdata.worldbank.org/collections/enterprise_surveys",
+            "source_type": "survey_method",
+            "usage": "Use firm-level evidence for competition, finance, infrastructure and performance questions.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          }
+        ],
+        "sections": [
+          {
+            "key": "lifecycle",
+            "title": "lifecycle",
+            "executive_takeaway": "行业处于试点向商业化验证阶段，采用程度和技术成熟度仍需进一步验证。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "行业处于试点向商业化验证阶段，采用程度和技术成熟度仍需进一步验证。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          },
+          {
+            "key": "market",
+            "title": "market",
+            "executive_takeaway": "竞争分析必须统一行业分类与口径；来源存在冲突时不得合并不可比市场数据。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "竞争分析必须统一行业分类与口径；来源存在冲突时不得合并不可比市场数据。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          },
+          {
+            "key": "business_model",
+            "title": "business_model",
+            "executive_takeaway": "产业链包括零部件、设备与系统集成；区分客户与付费者。企业SaaS收入依赖订阅、续费与获客成本。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "产业链包括零部件、设备与系统集成；区分客户与付费者。企业SaaS收入依赖订阅、续费与获客成本。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          },
+          {
+            "key": "drivers_risks",
+            "title": "drivers_risks",
+            "executive_takeaway": "监管风险包括适航和许可，技术替代和融资也可能影响商业化。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "监管风险包括适航和许可，技术替代和融资也可能影响商业化。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          }
+        ],
+        "charts": [
+          {
+            "id": "chart-lifecycle",
+            "section_key": "lifecycle",
+            "title": "lifecycle关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-market",
+            "section_key": "market",
+            "title": "market关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-business_model",
+            "section_key": "business_model",
+            "title": "business_model关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-drivers_risks",
+            "section_key": "drivers_risks",
+            "title": "drivers_risks关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "S-fixture",
+            "title": "SYNTHETIC TEST DOCUMENT — NOT REAL INDUSTRY DATA",
+            "url": "https://example.com/fixture",
+            "domain": "example.com",
+            "excerpt": "行业处于试点向商业化验证阶段，采用程度和技术成熟度仍需进一步验证。\n竞争分析必须统一行业分类与口径；来源存在冲突时不得合并不可比市场数据。\n产业链包括零部件、设备与系统集成；区分客户与付费者。企业SaaS收入依赖订阅、续费与获客成本。\n监管风险包括适航和许可，技术替代和融资也可能影响商业化。",
+            "published_at": null,
+            "retrieved_at": "2026-09-15T05:35:23.748980+00:00"
+          }
+        ],
+        "methodology": [
+          "M-方法来源只用于任务设计；S-行业来源用于事实判断。",
+          "先获取方法知识并规划任务，再采集行业证据，四个专业 Agent 并行分析。",
+          "分析完成后由图表 Agent 制图，主 Agent 汇总并接受质量评测。"
+        ],
+        "limitations": [
+          "合成测试来源，不可用于实际决策；数据口径冲突需要核查。"
+        ],
+        "session_id": "a2454bc01ef843cc8257ade44e1f7def",
+        "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude"
+      },
+      "report_evaluation": {
+        "report_id": "a824db2098634bffbe7c04294826bb57",
+        "overall_score": 1.0,
+        "passed": true,
+        "metrics": [
+          {
+            "name": "citation_coverage",
+            "score": 1.0,
+            "detail": "有引用的结论占比"
+          },
+          {
+            "name": "citation_validity",
+            "score": 1.0,
+            "detail": "引用 ID 有效占比"
+          },
+          {
+            "name": "section_completeness",
+            "score": 1.0,
+            "detail": "必需分析栏目完整度"
+          },
+          {
+            "name": "subagent_success",
+            "score": 1.0,
+            "detail": "并行 SubAgent 产出成功率"
+          },
+          {
+            "name": "chart_coverage",
+            "score": 1.0,
+            "detail": "栏目图表覆盖度"
+          },
+          {
+            "name": "uncertainty_disclosure",
+            "score": 1.0,
+            "detail": "显式披露不确定性的结论占比"
+          },
+          {
+            "name": "methodology_grounding",
+            "score": 1.0,
+            "detail": "任务方法来源有效占比"
+          }
+        ],
+        "suggestions": []
+      },
+      "trace": [
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "workflow.started",
+          "elapsed_ms": 0.045,
+          "industry": "低空经济"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.started",
+          "elapsed_ms": 0.052,
+          "agent": "knowledge_acquisition"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.started",
+          "elapsed_ms": 0.071,
+          "agent": "knowledge_acquisition",
+          "span_id": "e6b030131e65465ebb215af96ee68734"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "llm.started",
+          "elapsed_ms": 0.118,
+          "schema": "MethodologyGuide",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "llm.completed",
+          "elapsed_ms": 18.101,
+          "schema": "MethodologyGuide",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.completed",
+          "elapsed_ms": 18.154,
+          "agent": "knowledge_acquisition",
+          "span_id": "e6b030131e65465ebb215af96ee68734",
+          "duration_ms": 18.08,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "knowledge.acquired",
+          "elapsed_ms": 19.123,
+          "count": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.completed",
+          "elapsed_ms": 19.142,
+          "agent": "knowledge_acquisition"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.started",
+          "elapsed_ms": 19.144,
+          "agent": "task_planning"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.started",
+          "elapsed_ms": 19.166,
+          "agent": "task_planning",
+          "span_id": "d997b2f10ad145f296ca44cf9c863bdc"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "llm.started",
+          "elapsed_ms": 19.203,
+          "schema": "ResearchPlan",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "llm.completed",
+          "elapsed_ms": 34.752,
+          "schema": "ResearchPlan",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.completed",
+          "elapsed_ms": 34.789,
+          "agent": "task_planning",
+          "span_id": "d997b2f10ad145f296ca44cf9c863bdc",
+          "duration_ms": 15.63,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "plan.ready",
+          "elapsed_ms": 34.951,
+          "tasks": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.completed",
+          "elapsed_ms": 34.992,
+          "agent": "task_planning"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.started",
+          "elapsed_ms": 35.01,
+          "agent": "source_collector",
+          "span_id": "b93cfcf4a6c249b79fe036dbdfb9e586"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.completed",
+          "elapsed_ms": 35.038,
+          "agent": "source_collector",
+          "span_id": "b93cfcf4a6c249b79fe036dbdfb9e586",
+          "duration_ms": 0.04,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "sources.collected",
+          "elapsed_ms": 35.116,
+          "count": 1
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.started",
+          "elapsed_ms": 35.186,
+          "agent": "lifecycle"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.started",
+          "elapsed_ms": 35.196,
+          "agent": "lifecycle",
+          "span_id": "fb0121bd63c745cfbb9792d371a7a5ed"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "llm.started",
+          "elapsed_ms": 35.224,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.started",
+          "elapsed_ms": 35.234,
+          "agent": "market"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.started",
+          "elapsed_ms": 35.241,
+          "agent": "market",
+          "span_id": "fb3ac6757ad54c7cba4e9ea24a64b68b"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "llm.started",
+          "elapsed_ms": 35.257,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.started",
+          "elapsed_ms": 35.262,
+          "agent": "business_model"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.started",
+          "elapsed_ms": 35.269,
+          "agent": "business_model",
+          "span_id": "b2f1207c25554926b7d74ab0d53cf112"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "llm.started",
+          "elapsed_ms": 35.281,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.started",
+          "elapsed_ms": 35.285,
+          "agent": "drivers_risks"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.started",
+          "elapsed_ms": 35.29,
+          "agent": "drivers_risks",
+          "span_id": "2f20c5455c744f8ba6ee532d217a035c"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "llm.started",
+          "elapsed_ms": 35.299,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "llm.completed",
+          "elapsed_ms": 48.846,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.completed",
+          "elapsed_ms": 48.864,
+          "agent": "lifecycle",
+          "span_id": "fb0121bd63c745cfbb9792d371a7a5ed",
+          "duration_ms": 13.67,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.completed",
+          "elapsed_ms": 49.073,
+          "agent": "lifecycle",
+          "title": "lifecycle"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "llm.completed",
+          "elapsed_ms": 49.135,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.completed",
+          "elapsed_ms": 49.143,
+          "agent": "market",
+          "span_id": "fb3ac6757ad54c7cba4e9ea24a64b68b",
+          "duration_ms": 13.9,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.completed",
+          "elapsed_ms": 49.358,
+          "agent": "market",
+          "title": "market"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "llm.completed",
+          "elapsed_ms": 49.435,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.completed",
+          "elapsed_ms": 49.444,
+          "agent": "business_model",
+          "span_id": "b2f1207c25554926b7d74ab0d53cf112",
+          "duration_ms": 14.18,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.completed",
+          "elapsed_ms": 49.578,
+          "agent": "business_model",
+          "title": "business_model"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "llm.completed",
+          "elapsed_ms": 49.618,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.completed",
+          "elapsed_ms": 49.625,
+          "agent": "drivers_risks",
+          "span_id": "2f20c5455c744f8ba6ee532d217a035c",
+          "duration_ms": 14.33,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.completed",
+          "elapsed_ms": 49.752,
+          "agent": "drivers_risks",
+          "title": "drivers_risks"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.started",
+          "elapsed_ms": 49.847,
+          "agent": "chart"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.started",
+          "elapsed_ms": 49.872,
+          "agent": "chart",
+          "span_id": "c87799f1432642a0a7ca8c0be0219c93"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.completed",
+          "elapsed_ms": 49.923,
+          "agent": "chart",
+          "span_id": "c87799f1432642a0a7ca8c0be0219c93",
+          "duration_ms": 0.06,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.completed",
+          "elapsed_ms": 50.078,
+          "agent": "chart",
+          "count": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.started",
+          "elapsed_ms": 50.08,
+          "agent": "main_agent"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.started",
+          "elapsed_ms": 50.09,
+          "agent": "main_agent",
+          "span_id": "815fc54127db4b8b905443a3cbaef1d5"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "llm.started",
+          "elapsed_ms": 50.154,
+          "schema": "SynthesisResult",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "llm.completed",
+          "elapsed_ms": 64.373,
+          "schema": "SynthesisResult",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "span.completed",
+          "elapsed_ms": 64.395,
+          "agent": "main_agent",
+          "span_id": "815fc54127db4b8b905443a3cbaef1d5",
+          "duration_ms": 14.31,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "agent.completed",
+          "elapsed_ms": 64.634,
+          "agent": "main_agent"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "workflow.completed",
+          "elapsed_ms": 64.702,
+          "report_id": "a824db2098634bffbe7c04294826bb57"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-low_altitude",
+          "event": "context.saved",
+          "elapsed_ms": 64.781,
+          "session_id": "a2454bc01ef843cc8257ade44e1f7def",
+          "enabled": false
+        }
+      ],
+      "latency_ms": 65.29
+    },
+    {
+      "case_id": "industrial_robot",
+      "question": {
+        "industry": "工业机器人",
+        "region": "中国",
+        "horizon": "未来3-5年",
+        "anchor_sites": [],
+        "question": "分析工业机器人产业链、竞争结构及盈利方式，区分设备收入和集成服务。",
+        "session_id": null,
+        "use_memory": false
+      },
+      "expected_quality": "覆盖核心零部件、整机与系统集成；区分收入结构；生命周期判断需采用或产能证据。",
+      "execution_mode": "fixture",
+      "score": 1.0,
+      "passed": true,
+      "checks": {
+        "required_sections": true,
+        "method_traceability": true,
+        "citation_integrity": true,
+        "numeric_provenance": true,
+        "limitations": true,
+        "live_evidence": true,
+        "finding_support": true,
+        "topic:market:竞争": true,
+        "topic:business_model:零部件": true,
+        "topic:business_model:系统集成": true,
+        "topic:business_model:设备": true
+      },
+      "trajectory": {
+        "span_success": 1.0,
+        "dependency_order": 1.0,
+        "parallel_overlap": 1.0
+      },
+      "failures": [],
+      "actual_report": {
+        "report_id": "691d8782bfa245f28d08e1b1d7cbc652",
+        "industry": "工业机器人",
+        "region": "中国",
+        "horizon": "未来3-5年",
+        "generated_at": "2026-09-15T05:35:23.842044+00:00",
+        "mode": "live",
+        "executive_summary": "合成回归报告，仅用于测试编排，不是真实行业分析。",
+        "lifecycle_stage": "验证阶段",
+        "lifecycle_score": 40.0,
+        "plan": {
+          "industry_definition": "界定中国工业机器人的产品、客户、地区和统计周期。",
+          "value_chain": [
+            "投入与技术",
+            "产品与服务",
+            "渠道与集成",
+            "终端客户",
+            "售后与配套"
+          ],
+          "hypotheses": [
+            "需求是否进入规模扩散阶段",
+            "利润由价值链哪一环获取",
+            "政策或技术变化是否改变竞争格局"
+          ],
+          "tasks": [
+            "Determine lifecycle stage from adoption, diffusion and maturity indicators.",
+            "Determine market scope, segments, growth and competitive forces.",
+            "Map value chain, buyer, payer, revenue, cost and unit economics.",
+            "Test policy, demand, technology and financial drivers; build scenarios."
+          ],
+          "evidence_gaps": [
+            "同口径历史市场数据",
+            "企业财务与客户数据",
+            "可验证的政策与技术时间线"
+          ],
+          "task_specs": [
+            {
+              "key": "lifecycle",
+              "objective": "Determine lifecycle stage from adoption, diffusion and maturity indicators.",
+              "method_ids": [
+                "M2",
+                "M3"
+              ],
+              "evidence_needed": [
+                "adoption series",
+                "technology standards",
+                "firm entry and exit"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "market",
+              "objective": "Determine market scope, segments, growth and competitive forces.",
+              "method_ids": [
+                "M1",
+                "M3"
+              ],
+              "evidence_needed": [
+                "industry classification",
+                "output and value added",
+                "rival and substitute evidence"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "business_model",
+              "objective": "Map value chain, buyer, payer, revenue, cost and unit economics.",
+              "method_ids": [
+                "M1",
+                "M4"
+              ],
+              "evidence_needed": [
+                "revenue and cost data",
+                "buyer and payer interviews",
+                "firm performance"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "drivers_risks",
+              "objective": "Test policy, demand, technology and financial drivers; build scenarios.",
+              "method_ids": [
+                "M2",
+                "M4"
+              ],
+              "evidence_needed": [
+                "policy documents",
+                "demand indicators",
+                "scenario assumptions"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            }
+          ]
+        },
+        "methodology_guide": {
+          "objective": "为中国工业机器人研究设计可复核的任务与证据标准",
+          "principles": [
+            {
+              "name": "先界定行业口径",
+              "instruction": "定义产品、客户、地区、分类代码和统计周期，再比较市场数据。",
+              "method_ids": [
+                "M3"
+              ]
+            },
+            {
+              "name": "竞争结构不等于竞品名单",
+              "instruction": "分别调查现有竞争、潜在进入、替代品、买方和供应方议价能力。",
+              "method_ids": [
+                "M1"
+              ]
+            },
+            {
+              "name": "技术成熟度须有观测指标",
+              "instruction": "区分发明、实际应用和扩散；寻找采用率、标准化和企业创新证据。",
+              "method_ids": [
+                "M2"
+              ]
+            },
+            {
+              "name": "商业模式须回到企业层面",
+              "instruction": "核查客户、付费者、成本、利润、融资约束及企业经营表现。",
+              "method_ids": [
+                "M4"
+              ]
+            }
+          ],
+          "workflow": [
+            "方法知识获取与适用性筛选",
+            "界定行业边界、指标口径和待验证假设",
+            "采集具体行业事实并登记来源",
+            "并行分析生命周期、市场竞争、商业模式、驱动与风险",
+            "根据已验证指标制图、主 Agent 汇总并质量评测"
+          ],
+          "source_ids": [
+            "M3",
+            "M1",
+            "M2",
+            "M4"
+          ],
+          "limitations": [
+            "目录摘要仅用于方法规划；具体行业事实必须另找 S- 来源。"
+          ]
+        },
+        "knowledge_sources": [
+          {
+            "id": "M1",
+            "title": "The Five Competitive Forces That Shape Strategy — Michael E. Porter (2008)",
+            "url": "https://hbr.org/2008/01/the-five-competitive-forces-that-shape-strategy",
+            "source_type": "book_or_article",
+            "usage": "Use five-forces questions to map rivalry, entrants, substitutes, buyers and suppliers.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M2",
+            "title": "Oslo Manual 2018 — OECD/Eurostat",
+            "url": "https://www.oecd.org/en/publications/oslo-manual-2018_9789264304604-en.html",
+            "source_type": "manual",
+            "usage": "Define innovation and adoption indicators before judging technology maturity.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M3",
+            "title": "Structural Analysis Database (STAN) — OECD",
+            "url": "https://www.oecd.org/en/data/datasets/structural-analysis-database.html",
+            "source_type": "data_method",
+            "usage": "Harmonise industry classification, output, value added, labour and productivity comparisons.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M4",
+            "title": "Enterprise Surveys — World Bank",
+            "url": "https://microdata.worldbank.org/collections/enterprise_surveys",
+            "source_type": "survey_method",
+            "usage": "Use firm-level evidence for competition, finance, infrastructure and performance questions.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          }
+        ],
+        "sections": [
+          {
+            "key": "lifecycle",
+            "title": "lifecycle",
+            "executive_takeaway": "行业处于试点向商业化验证阶段，采用程度和技术成熟度仍需进一步验证。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "行业处于试点向商业化验证阶段，采用程度和技术成熟度仍需进一步验证。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          },
+          {
+            "key": "market",
+            "title": "market",
+            "executive_takeaway": "竞争分析必须统一行业分类与口径；来源存在冲突时不得合并不可比市场数据。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "竞争分析必须统一行业分类与口径；来源存在冲突时不得合并不可比市场数据。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          },
+          {
+            "key": "business_model",
+            "title": "business_model",
+            "executive_takeaway": "产业链包括零部件、设备与系统集成；区分客户与付费者。企业SaaS收入依赖订阅、续费与获客成本。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "产业链包括零部件、设备与系统集成；区分客户与付费者。企业SaaS收入依赖订阅、续费与获客成本。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          },
+          {
+            "key": "drivers_risks",
+            "title": "drivers_risks",
+            "executive_takeaway": "监管风险包括适航和许可，技术替代和融资也可能影响商业化。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "监管风险包括适航和许可，技术替代和融资也可能影响商业化。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          }
+        ],
+        "charts": [
+          {
+            "id": "chart-lifecycle",
+            "section_key": "lifecycle",
+            "title": "lifecycle关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-market",
+            "section_key": "market",
+            "title": "market关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-business_model",
+            "section_key": "business_model",
+            "title": "business_model关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-drivers_risks",
+            "section_key": "drivers_risks",
+            "title": "drivers_risks关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "S-fixture",
+            "title": "SYNTHETIC TEST DOCUMENT — NOT REAL INDUSTRY DATA",
+            "url": "https://example.com/fixture",
+            "domain": "example.com",
+            "excerpt": "行业处于试点向商业化验证阶段，采用程度和技术成熟度仍需进一步验证。\n竞争分析必须统一行业分类与口径；来源存在冲突时不得合并不可比市场数据。\n产业链包括零部件、设备与系统集成；区分客户与付费者。企业SaaS收入依赖订阅、续费与获客成本。\n监管风险包括适航和许可，技术替代和融资也可能影响商业化。",
+            "published_at": null,
+            "retrieved_at": "2026-09-15T05:35:23.810489+00:00"
+          }
+        ],
+        "methodology": [
+          "M-方法来源只用于任务设计；S-行业来源用于事实判断。",
+          "先获取方法知识并规划任务，再采集行业证据，四个专业 Agent 并行分析。",
+          "分析完成后由图表 Agent 制图，主 Agent 汇总并接受质量评测。"
+        ],
+        "limitations": [
+          "合成测试来源，不可用于实际决策；数据口径冲突需要核查。"
+        ],
+        "session_id": "dec97fa51b8e48f7af3eef0ef693e554",
+        "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot"
+      },
+      "report_evaluation": {
+        "report_id": "691d8782bfa245f28d08e1b1d7cbc652",
+        "overall_score": 1.0,
+        "passed": true,
+        "metrics": [
+          {
+            "name": "citation_coverage",
+            "score": 1.0,
+            "detail": "有引用的结论占比"
+          },
+          {
+            "name": "citation_validity",
+            "score": 1.0,
+            "detail": "引用 ID 有效占比"
+          },
+          {
+            "name": "section_completeness",
+            "score": 1.0,
+            "detail": "必需分析栏目完整度"
+          },
+          {
+            "name": "subagent_success",
+            "score": 1.0,
+            "detail": "并行 SubAgent 产出成功率"
+          },
+          {
+            "name": "chart_coverage",
+            "score": 1.0,
+            "detail": "栏目图表覆盖度"
+          },
+          {
+            "name": "uncertainty_disclosure",
+            "score": 1.0,
+            "detail": "显式披露不确定性的结论占比"
+          },
+          {
+            "name": "methodology_grounding",
+            "score": 1.0,
+            "detail": "任务方法来源有效占比"
+          }
+        ],
+        "suggestions": []
+      },
+      "trace": [
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "workflow.started",
+          "elapsed_ms": 0.052,
+          "industry": "工业机器人"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.started",
+          "elapsed_ms": 0.059,
+          "agent": "knowledge_acquisition"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.started",
+          "elapsed_ms": 0.083,
+          "agent": "knowledge_acquisition",
+          "span_id": "d94569274f484bf3a6d110fbb9331c70"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "llm.started",
+          "elapsed_ms": 0.152,
+          "schema": "MethodologyGuide",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "llm.completed",
+          "elapsed_ms": 13.262,
+          "schema": "MethodologyGuide",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.completed",
+          "elapsed_ms": 13.301,
+          "agent": "knowledge_acquisition",
+          "span_id": "d94569274f484bf3a6d110fbb9331c70",
+          "duration_ms": 13.22,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "knowledge.acquired",
+          "elapsed_ms": 13.599,
+          "count": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.completed",
+          "elapsed_ms": 13.631,
+          "agent": "knowledge_acquisition"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.started",
+          "elapsed_ms": 13.634,
+          "agent": "task_planning"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.started",
+          "elapsed_ms": 13.67,
+          "agent": "task_planning",
+          "span_id": "5a77ba787bc4460a9e3fcf0f2fa29691"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "llm.started",
+          "elapsed_ms": 13.71,
+          "schema": "ResearchPlan",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "llm.completed",
+          "elapsed_ms": 29.213,
+          "schema": "ResearchPlan",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.completed",
+          "elapsed_ms": 29.252,
+          "agent": "task_planning",
+          "span_id": "5a77ba787bc4460a9e3fcf0f2fa29691",
+          "duration_ms": 15.6,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "plan.ready",
+          "elapsed_ms": 29.508,
+          "tasks": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.completed",
+          "elapsed_ms": 29.606,
+          "agent": "task_planning"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.started",
+          "elapsed_ms": 29.666,
+          "agent": "source_collector",
+          "span_id": "c74770e4e65140fab7be403137ee53a5"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.completed",
+          "elapsed_ms": 29.707,
+          "agent": "source_collector",
+          "span_id": "c74770e4e65140fab7be403137ee53a5",
+          "duration_ms": 0.05,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "sources.collected",
+          "elapsed_ms": 29.972,
+          "count": 1
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.started",
+          "elapsed_ms": 30.101,
+          "agent": "lifecycle"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.started",
+          "elapsed_ms": 30.124,
+          "agent": "lifecycle",
+          "span_id": "601405f587614e58930d852abc9c4485"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "llm.started",
+          "elapsed_ms": 30.147,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.started",
+          "elapsed_ms": 30.157,
+          "agent": "market"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.started",
+          "elapsed_ms": 30.164,
+          "agent": "market",
+          "span_id": "7a76609984634c02b34fc8f725f91ebe"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "llm.started",
+          "elapsed_ms": 30.174,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.started",
+          "elapsed_ms": 30.182,
+          "agent": "business_model"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.started",
+          "elapsed_ms": 30.188,
+          "agent": "business_model",
+          "span_id": "9a283c09a6a94f338415a24e1607f167"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "llm.started",
+          "elapsed_ms": 30.197,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.started",
+          "elapsed_ms": 30.202,
+          "agent": "drivers_risks"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.started",
+          "elapsed_ms": 30.207,
+          "agent": "drivers_risks",
+          "span_id": "7c9ceb84f35b4032beba68445790f7c4"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "llm.started",
+          "elapsed_ms": 30.229,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "llm.completed",
+          "elapsed_ms": 44.785,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.completed",
+          "elapsed_ms": 44.811,
+          "agent": "lifecycle",
+          "span_id": "601405f587614e58930d852abc9c4485",
+          "duration_ms": 14.69,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.completed",
+          "elapsed_ms": 45.232,
+          "agent": "lifecycle",
+          "title": "lifecycle"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "llm.completed",
+          "elapsed_ms": 45.327,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.completed",
+          "elapsed_ms": 45.34,
+          "agent": "market",
+          "span_id": "7a76609984634c02b34fc8f725f91ebe",
+          "duration_ms": 15.18,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.completed",
+          "elapsed_ms": 45.454,
+          "agent": "market",
+          "title": "market"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "llm.completed",
+          "elapsed_ms": 45.483,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.completed",
+          "elapsed_ms": 45.488,
+          "agent": "business_model",
+          "span_id": "9a283c09a6a94f338415a24e1607f167",
+          "duration_ms": 15.3,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.completed",
+          "elapsed_ms": 45.563,
+          "agent": "business_model",
+          "title": "business_model"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "llm.completed",
+          "elapsed_ms": 45.594,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.completed",
+          "elapsed_ms": 45.598,
+          "agent": "drivers_risks",
+          "span_id": "7c9ceb84f35b4032beba68445790f7c4",
+          "duration_ms": 15.39,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.completed",
+          "elapsed_ms": 45.655,
+          "agent": "drivers_risks",
+          "title": "drivers_risks"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.started",
+          "elapsed_ms": 45.731,
+          "agent": "chart"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.started",
+          "elapsed_ms": 45.766,
+          "agent": "chart",
+          "span_id": "47c4c20f0a1941e5b192d842b09e83a7"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.completed",
+          "elapsed_ms": 45.807,
+          "agent": "chart",
+          "span_id": "47c4c20f0a1941e5b192d842b09e83a7",
+          "duration_ms": 0.06,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.completed",
+          "elapsed_ms": 45.929,
+          "agent": "chart",
+          "count": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.started",
+          "elapsed_ms": 45.931,
+          "agent": "main_agent"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.started",
+          "elapsed_ms": 45.941,
+          "agent": "main_agent",
+          "span_id": "f1b40cb987f44795a6ef40bba1242498"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "llm.started",
+          "elapsed_ms": 46.075,
+          "schema": "SynthesisResult",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "llm.completed",
+          "elapsed_ms": 60.883,
+          "schema": "SynthesisResult",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "span.completed",
+          "elapsed_ms": 60.908,
+          "agent": "main_agent",
+          "span_id": "f1b40cb987f44795a6ef40bba1242498",
+          "duration_ms": 14.97,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "agent.completed",
+          "elapsed_ms": 61.203,
+          "agent": "main_agent"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "workflow.completed",
+          "elapsed_ms": 61.265,
+          "report_id": "691d8782bfa245f28d08e1b1d7cbc652"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-industrial_robot",
+          "event": "context.saved",
+          "elapsed_ms": 61.315,
+          "session_id": "dec97fa51b8e48f7af3eef0ef693e554",
+          "enabled": false
+        }
+      ],
+      "latency_ms": 61.76
+    },
+    {
+      "case_id": "enterprise_saas",
+      "question": {
+        "industry": "企业SaaS",
+        "region": "中国",
+        "horizon": "未来3-5年",
+        "anchor_sites": [],
+        "question": "分析企业SaaS商业模式，重点讨论订阅收入、续费和获客成本，并说明风险。",
+        "session_id": null,
+        "use_memory": false
+      },
+      "expected_quality": "解释订阅、续费、获客成本与单位经济性；不把分析性评分当作财务统计；引用当前证据。",
+      "execution_mode": "fixture",
+      "score": 1.0,
+      "passed": true,
+      "checks": {
+        "required_sections": true,
+        "method_traceability": true,
+        "citation_integrity": true,
+        "numeric_provenance": true,
+        "limitations": true,
+        "live_evidence": true,
+        "finding_support": true,
+        "topic:business_model:订阅": true,
+        "topic:business_model:续费": true,
+        "topic:business_model:获客成本": true,
+        "topic:drivers_risks:风险": true
+      },
+      "trajectory": {
+        "span_success": 1.0,
+        "dependency_order": 1.0,
+        "parallel_overlap": 1.0
+      },
+      "failures": [],
+      "actual_report": {
+        "report_id": "f1d4abef527d4540b87a9cf8f0106769",
+        "industry": "企业SaaS",
+        "region": "中国",
+        "horizon": "未来3-5年",
+        "generated_at": "2026-09-15T05:35:23.903731+00:00",
+        "mode": "live",
+        "executive_summary": "合成回归报告，仅用于测试编排，不是真实行业分析。",
+        "lifecycle_stage": "验证阶段",
+        "lifecycle_score": 40.0,
+        "plan": {
+          "industry_definition": "界定中国企业SaaS的产品、客户、地区和统计周期。",
+          "value_chain": [
+            "投入与技术",
+            "产品与服务",
+            "渠道与集成",
+            "终端客户",
+            "售后与配套"
+          ],
+          "hypotheses": [
+            "需求是否进入规模扩散阶段",
+            "利润由价值链哪一环获取",
+            "政策或技术变化是否改变竞争格局"
+          ],
+          "tasks": [
+            "Determine lifecycle stage from adoption, diffusion and maturity indicators.",
+            "Determine market scope, segments, growth and competitive forces.",
+            "Map value chain, buyer, payer, revenue, cost and unit economics.",
+            "Test policy, demand, technology and financial drivers; build scenarios."
+          ],
+          "evidence_gaps": [
+            "同口径历史市场数据",
+            "企业财务与客户数据",
+            "可验证的政策与技术时间线"
+          ],
+          "task_specs": [
+            {
+              "key": "lifecycle",
+              "objective": "Determine lifecycle stage from adoption, diffusion and maturity indicators.",
+              "method_ids": [
+                "M2",
+                "M3"
+              ],
+              "evidence_needed": [
+                "adoption series",
+                "technology standards",
+                "firm entry and exit"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "market",
+              "objective": "Determine market scope, segments, growth and competitive forces.",
+              "method_ids": [
+                "M1",
+                "M3"
+              ],
+              "evidence_needed": [
+                "industry classification",
+                "output and value added",
+                "rival and substitute evidence"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "business_model",
+              "objective": "Map value chain, buyer, payer, revenue, cost and unit economics.",
+              "method_ids": [
+                "M1",
+                "M4"
+              ],
+              "evidence_needed": [
+                "revenue and cost data",
+                "buyer and payer interviews",
+                "firm performance"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "drivers_risks",
+              "objective": "Test policy, demand, technology and financial drivers; build scenarios.",
+              "method_ids": [
+                "M2",
+                "M4"
+              ],
+              "evidence_needed": [
+                "policy documents",
+                "demand indicators",
+                "scenario assumptions"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            }
+          ]
+        },
+        "methodology_guide": {
+          "objective": "为中国企业SaaS研究设计可复核的任务与证据标准",
+          "principles": [
+            {
+              "name": "先界定行业口径",
+              "instruction": "定义产品、客户、地区、分类代码和统计周期，再比较市场数据。",
+              "method_ids": [
+                "M3"
+              ]
+            },
+            {
+              "name": "竞争结构不等于竞品名单",
+              "instruction": "分别调查现有竞争、潜在进入、替代品、买方和供应方议价能力。",
+              "method_ids": [
+                "M1"
+              ]
+            },
+            {
+              "name": "技术成熟度须有观测指标",
+              "instruction": "区分发明、实际应用和扩散；寻找采用率、标准化和企业创新证据。",
+              "method_ids": [
+                "M2"
+              ]
+            },
+            {
+              "name": "商业模式须回到企业层面",
+              "instruction": "核查客户、付费者、成本、利润、融资约束及企业经营表现。",
+              "method_ids": [
+                "M4"
+              ]
+            }
+          ],
+          "workflow": [
+            "方法知识获取与适用性筛选",
+            "界定行业边界、指标口径和待验证假设",
+            "采集具体行业事实并登记来源",
+            "并行分析生命周期、市场竞争、商业模式、驱动与风险",
+            "根据已验证指标制图、主 Agent 汇总并质量评测"
+          ],
+          "source_ids": [
+            "M3",
+            "M1",
+            "M2",
+            "M4"
+          ],
+          "limitations": [
+            "目录摘要仅用于方法规划；具体行业事实必须另找 S- 来源。"
+          ]
+        },
+        "knowledge_sources": [
+          {
+            "id": "M1",
+            "title": "The Five Competitive Forces That Shape Strategy — Michael E. Porter (2008)",
+            "url": "https://hbr.org/2008/01/the-five-competitive-forces-that-shape-strategy",
+            "source_type": "book_or_article",
+            "usage": "Use five-forces questions to map rivalry, entrants, substitutes, buyers and suppliers.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M2",
+            "title": "Oslo Manual 2018 — OECD/Eurostat",
+            "url": "https://www.oecd.org/en/publications/oslo-manual-2018_9789264304604-en.html",
+            "source_type": "manual",
+            "usage": "Define innovation and adoption indicators before judging technology maturity.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M3",
+            "title": "Structural Analysis Database (STAN) — OECD",
+            "url": "https://www.oecd.org/en/data/datasets/structural-analysis-database.html",
+            "source_type": "data_method",
+            "usage": "Harmonise industry classification, output, value added, labour and productivity comparisons.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M4",
+            "title": "Enterprise Surveys — World Bank",
+            "url": "https://microdata.worldbank.org/collections/enterprise_surveys",
+            "source_type": "survey_method",
+            "usage": "Use firm-level evidence for competition, finance, infrastructure and performance questions.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          }
+        ],
+        "sections": [
+          {
+            "key": "lifecycle",
+            "title": "lifecycle",
+            "executive_takeaway": "行业处于试点向商业化验证阶段，采用程度和技术成熟度仍需进一步验证。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "行业处于试点向商业化验证阶段，采用程度和技术成熟度仍需进一步验证。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          },
+          {
+            "key": "market",
+            "title": "market",
+            "executive_takeaway": "竞争分析必须统一行业分类与口径；来源存在冲突时不得合并不可比市场数据。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "竞争分析必须统一行业分类与口径；来源存在冲突时不得合并不可比市场数据。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          },
+          {
+            "key": "business_model",
+            "title": "business_model",
+            "executive_takeaway": "产业链包括零部件、设备与系统集成；区分客户与付费者。企业SaaS收入依赖订阅、续费与获客成本。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "产业链包括零部件、设备与系统集成；区分客户与付费者。企业SaaS收入依赖订阅、续费与获客成本。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          },
+          {
+            "key": "drivers_risks",
+            "title": "drivers_risks",
+            "executive_takeaway": "监管风险包括适航和许可，技术替代和融资也可能影响商业化。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "监管风险包括适航和许可，技术替代和融资也可能影响商业化。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          }
+        ],
+        "charts": [
+          {
+            "id": "chart-lifecycle",
+            "section_key": "lifecycle",
+            "title": "lifecycle关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-market",
+            "section_key": "market",
+            "title": "market关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-business_model",
+            "section_key": "business_model",
+            "title": "business_model关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-drivers_risks",
+            "section_key": "drivers_risks",
+            "title": "drivers_risks关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "S-fixture",
+            "title": "SYNTHETIC TEST DOCUMENT — NOT REAL INDUSTRY DATA",
+            "url": "https://example.com/fixture",
+            "domain": "example.com",
+            "excerpt": "行业处于试点向商业化验证阶段，采用程度和技术成熟度仍需进一步验证。\n竞争分析必须统一行业分类与口径；来源存在冲突时不得合并不可比市场数据。\n产业链包括零部件、设备与系统集成；区分客户与付费者。企业SaaS收入依赖订阅、续费与获客成本。\n监管风险包括适航和许可，技术替代和融资也可能影响商业化。",
+            "published_at": null,
+            "retrieved_at": "2026-09-15T05:35:23.873527+00:00"
+          }
+        ],
+        "methodology": [
+          "M-方法来源只用于任务设计；S-行业来源用于事实判断。",
+          "先获取方法知识并规划任务，再采集行业证据，四个专业 Agent 并行分析。",
+          "分析完成后由图表 Agent 制图，主 Agent 汇总并接受质量评测。"
+        ],
+        "limitations": [
+          "合成测试来源，不可用于实际决策；数据口径冲突需要核查。"
+        ],
+        "session_id": "4cc95758895d4c22b4d4324ab51a5f9d",
+        "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas"
+      },
+      "report_evaluation": {
+        "report_id": "f1d4abef527d4540b87a9cf8f0106769",
+        "overall_score": 1.0,
+        "passed": true,
+        "metrics": [
+          {
+            "name": "citation_coverage",
+            "score": 1.0,
+            "detail": "有引用的结论占比"
+          },
+          {
+            "name": "citation_validity",
+            "score": 1.0,
+            "detail": "引用 ID 有效占比"
+          },
+          {
+            "name": "section_completeness",
+            "score": 1.0,
+            "detail": "必需分析栏目完整度"
+          },
+          {
+            "name": "subagent_success",
+            "score": 1.0,
+            "detail": "并行 SubAgent 产出成功率"
+          },
+          {
+            "name": "chart_coverage",
+            "score": 1.0,
+            "detail": "栏目图表覆盖度"
+          },
+          {
+            "name": "uncertainty_disclosure",
+            "score": 1.0,
+            "detail": "显式披露不确定性的结论占比"
+          },
+          {
+            "name": "methodology_grounding",
+            "score": 1.0,
+            "detail": "任务方法来源有效占比"
+          }
+        ],
+        "suggestions": []
+      },
+      "trace": [
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "workflow.started",
+          "elapsed_ms": 0.034,
+          "industry": "企业SaaS"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.started",
+          "elapsed_ms": 0.038,
+          "agent": "knowledge_acquisition"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.started",
+          "elapsed_ms": 0.056,
+          "agent": "knowledge_acquisition",
+          "span_id": "241ed5ffdc724e7dbe61b7c64eaf90c0"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "llm.started",
+          "elapsed_ms": 0.109,
+          "schema": "MethodologyGuide",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "llm.completed",
+          "elapsed_ms": 13.783,
+          "schema": "MethodologyGuide",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.completed",
+          "elapsed_ms": 13.849,
+          "agent": "knowledge_acquisition",
+          "span_id": "241ed5ffdc724e7dbe61b7c64eaf90c0",
+          "duration_ms": 13.79,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "knowledge.acquired",
+          "elapsed_ms": 14.195,
+          "count": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.completed",
+          "elapsed_ms": 14.245,
+          "agent": "knowledge_acquisition"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.started",
+          "elapsed_ms": 14.249,
+          "agent": "task_planning"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.started",
+          "elapsed_ms": 14.287,
+          "agent": "task_planning",
+          "span_id": "f1db244580c5427da5ba9f0dffd7a2a2"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "llm.started",
+          "elapsed_ms": 14.333,
+          "schema": "ResearchPlan",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "llm.completed",
+          "elapsed_ms": 29.246,
+          "schema": "ResearchPlan",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.completed",
+          "elapsed_ms": 29.287,
+          "agent": "task_planning",
+          "span_id": "f1db244580c5427da5ba9f0dffd7a2a2",
+          "duration_ms": 15.01,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "plan.ready",
+          "elapsed_ms": 29.807,
+          "tasks": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.completed",
+          "elapsed_ms": 29.955,
+          "agent": "task_planning"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.started",
+          "elapsed_ms": 30.016,
+          "agent": "source_collector",
+          "span_id": "92e1f18c27fb4c98938f350f7b21b59d"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.completed",
+          "elapsed_ms": 30.079,
+          "agent": "source_collector",
+          "span_id": "92e1f18c27fb4c98938f350f7b21b59d",
+          "duration_ms": 0.09,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "sources.collected",
+          "elapsed_ms": 30.274,
+          "count": 1
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.started",
+          "elapsed_ms": 30.405,
+          "agent": "lifecycle"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.started",
+          "elapsed_ms": 30.429,
+          "agent": "lifecycle",
+          "span_id": "c8c18ab112284d499704da81c81de09d"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "llm.started",
+          "elapsed_ms": 30.481,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.started",
+          "elapsed_ms": 30.502,
+          "agent": "market"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.started",
+          "elapsed_ms": 30.519,
+          "agent": "market",
+          "span_id": "43d8629caffe4fd0b9d609a467d2408c"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "llm.started",
+          "elapsed_ms": 30.544,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.started",
+          "elapsed_ms": 30.556,
+          "agent": "business_model"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.started",
+          "elapsed_ms": 30.575,
+          "agent": "business_model",
+          "span_id": "01b164df9db74c3da9899d181b535f33"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "llm.started",
+          "elapsed_ms": 30.595,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.started",
+          "elapsed_ms": 30.604,
+          "agent": "drivers_risks"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.started",
+          "elapsed_ms": 30.614,
+          "agent": "drivers_risks",
+          "span_id": "9d3a66a4094747c8b76ecbb3647eb343"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "llm.started",
+          "elapsed_ms": 30.633,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "llm.completed",
+          "elapsed_ms": 44.488,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.completed",
+          "elapsed_ms": 44.52,
+          "agent": "lifecycle",
+          "span_id": "c8c18ab112284d499704da81c81de09d",
+          "duration_ms": 14.1,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.completed",
+          "elapsed_ms": 44.869,
+          "agent": "lifecycle",
+          "title": "lifecycle"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "llm.completed",
+          "elapsed_ms": 44.956,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.completed",
+          "elapsed_ms": 44.97,
+          "agent": "market",
+          "span_id": "43d8629caffe4fd0b9d609a467d2408c",
+          "duration_ms": 14.45,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.completed",
+          "elapsed_ms": 45.377,
+          "agent": "market",
+          "title": "market"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "llm.completed",
+          "elapsed_ms": 45.533,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.completed",
+          "elapsed_ms": 45.551,
+          "agent": "business_model",
+          "span_id": "01b164df9db74c3da9899d181b535f33",
+          "duration_ms": 14.98,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.completed",
+          "elapsed_ms": 46.056,
+          "agent": "business_model",
+          "title": "business_model"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "llm.completed",
+          "elapsed_ms": 46.171,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.completed",
+          "elapsed_ms": 46.187,
+          "agent": "drivers_risks",
+          "span_id": "9d3a66a4094747c8b76ecbb3647eb343",
+          "duration_ms": 15.57,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.completed",
+          "elapsed_ms": 46.573,
+          "agent": "drivers_risks",
+          "title": "drivers_risks"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.started",
+          "elapsed_ms": 46.656,
+          "agent": "chart"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.started",
+          "elapsed_ms": 46.694,
+          "agent": "chart",
+          "span_id": "c7938ba07e6840ad9b87d1b8e7882dd5"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.completed",
+          "elapsed_ms": 46.758,
+          "agent": "chart",
+          "span_id": "c7938ba07e6840ad9b87d1b8e7882dd5",
+          "duration_ms": 0.08,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.completed",
+          "elapsed_ms": 46.938,
+          "agent": "chart",
+          "count": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.started",
+          "elapsed_ms": 46.945,
+          "agent": "main_agent"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.started",
+          "elapsed_ms": 46.965,
+          "agent": "main_agent",
+          "span_id": "aad89dc5208f4ee7b25642e26bf535c0"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "llm.started",
+          "elapsed_ms": 47.144,
+          "schema": "SynthesisResult",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "llm.completed",
+          "elapsed_ms": 59.743,
+          "schema": "SynthesisResult",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "span.completed",
+          "elapsed_ms": 59.768,
+          "agent": "main_agent",
+          "span_id": "aad89dc5208f4ee7b25642e26bf535c0",
+          "duration_ms": 12.81,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "agent.completed",
+          "elapsed_ms": 60.198,
+          "agent": "main_agent"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "workflow.completed",
+          "elapsed_ms": 60.291,
+          "report_id": "f1d4abef527d4540b87a9cf8f0106769"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-enterprise_saas",
+          "event": "context.saved",
+          "elapsed_ms": 60.364,
+          "session_id": "4cc95758895d4c22b4d4324ab51a5f9d",
+          "enabled": false
+        }
+      ],
+      "latency_ms": 60.98
+    },
+    {
+      "case_id": "conflicting_data",
+      "question": {
+        "industry": "动力电池",
+        "region": "中国",
+        "horizon": "未来3-5年",
+        "anchor_sites": [],
+        "question": "不同来源的市场规模口径冲突时，如何给出可复核的动力电池行业分析？",
+        "session_id": null,
+        "use_memory": false
+      },
+      "expected_quality": "明确披露口径冲突；保留不同来源；不强行平均不可比数字，给出补充证据建议。",
+      "execution_mode": "fixture",
+      "score": 1.0,
+      "passed": true,
+      "checks": {
+        "required_sections": true,
+        "method_traceability": true,
+        "citation_integrity": true,
+        "numeric_provenance": true,
+        "limitations": true,
+        "live_evidence": true,
+        "finding_support": true,
+        "topic:market:口径": true,
+        "topic:market:冲突": true,
+        "conflict_disclosure": true
+      },
+      "trajectory": {
+        "span_success": 1.0,
+        "dependency_order": 1.0,
+        "parallel_overlap": 1.0
+      },
+      "failures": [],
+      "actual_report": {
+        "report_id": "f47c93c1c5ca4cafbb94d554df6b35e0",
+        "industry": "动力电池",
+        "region": "中国",
+        "horizon": "未来3-5年",
+        "generated_at": "2026-09-15T05:35:23.966083+00:00",
+        "mode": "live",
+        "executive_summary": "合成回归报告，仅用于测试编排，不是真实行业分析。",
+        "lifecycle_stage": "验证阶段",
+        "lifecycle_score": 40.0,
+        "plan": {
+          "industry_definition": "界定中国动力电池的产品、客户、地区和统计周期。",
+          "value_chain": [
+            "投入与技术",
+            "产品与服务",
+            "渠道与集成",
+            "终端客户",
+            "售后与配套"
+          ],
+          "hypotheses": [
+            "需求是否进入规模扩散阶段",
+            "利润由价值链哪一环获取",
+            "政策或技术变化是否改变竞争格局"
+          ],
+          "tasks": [
+            "Determine lifecycle stage from adoption, diffusion and maturity indicators.",
+            "Determine market scope, segments, growth and competitive forces.",
+            "Map value chain, buyer, payer, revenue, cost and unit economics.",
+            "Test policy, demand, technology and financial drivers; build scenarios."
+          ],
+          "evidence_gaps": [
+            "同口径历史市场数据",
+            "企业财务与客户数据",
+            "可验证的政策与技术时间线"
+          ],
+          "task_specs": [
+            {
+              "key": "lifecycle",
+              "objective": "Determine lifecycle stage from adoption, diffusion and maturity indicators.",
+              "method_ids": [
+                "M2",
+                "M3"
+              ],
+              "evidence_needed": [
+                "adoption series",
+                "technology standards",
+                "firm entry and exit"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "market",
+              "objective": "Determine market scope, segments, growth and competitive forces.",
+              "method_ids": [
+                "M1",
+                "M3"
+              ],
+              "evidence_needed": [
+                "industry classification",
+                "output and value added",
+                "rival and substitute evidence"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "business_model",
+              "objective": "Map value chain, buyer, payer, revenue, cost and unit economics.",
+              "method_ids": [
+                "M1",
+                "M4"
+              ],
+              "evidence_needed": [
+                "revenue and cost data",
+                "buyer and payer interviews",
+                "firm performance"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "drivers_risks",
+              "objective": "Test policy, demand, technology and financial drivers; build scenarios.",
+              "method_ids": [
+                "M2",
+                "M4"
+              ],
+              "evidence_needed": [
+                "policy documents",
+                "demand indicators",
+                "scenario assumptions"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            }
+          ]
+        },
+        "methodology_guide": {
+          "objective": "为中国动力电池研究设计可复核的任务与证据标准",
+          "principles": [
+            {
+              "name": "先界定行业口径",
+              "instruction": "定义产品、客户、地区、分类代码和统计周期，再比较市场数据。",
+              "method_ids": [
+                "M3"
+              ]
+            },
+            {
+              "name": "竞争结构不等于竞品名单",
+              "instruction": "分别调查现有竞争、潜在进入、替代品、买方和供应方议价能力。",
+              "method_ids": [
+                "M1"
+              ]
+            },
+            {
+              "name": "技术成熟度须有观测指标",
+              "instruction": "区分发明、实际应用和扩散；寻找采用率、标准化和企业创新证据。",
+              "method_ids": [
+                "M2"
+              ]
+            },
+            {
+              "name": "商业模式须回到企业层面",
+              "instruction": "核查客户、付费者、成本、利润、融资约束及企业经营表现。",
+              "method_ids": [
+                "M4"
+              ]
+            }
+          ],
+          "workflow": [
+            "方法知识获取与适用性筛选",
+            "界定行业边界、指标口径和待验证假设",
+            "采集具体行业事实并登记来源",
+            "并行分析生命周期、市场竞争、商业模式、驱动与风险",
+            "根据已验证指标制图、主 Agent 汇总并质量评测"
+          ],
+          "source_ids": [
+            "M3",
+            "M1",
+            "M2",
+            "M4"
+          ],
+          "limitations": [
+            "目录摘要仅用于方法规划；具体行业事实必须另找 S- 来源。"
+          ]
+        },
+        "knowledge_sources": [
+          {
+            "id": "M1",
+            "title": "The Five Competitive Forces That Shape Strategy — Michael E. Porter (2008)",
+            "url": "https://hbr.org/2008/01/the-five-competitive-forces-that-shape-strategy",
+            "source_type": "book_or_article",
+            "usage": "Use five-forces questions to map rivalry, entrants, substitutes, buyers and suppliers.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M2",
+            "title": "Oslo Manual 2018 — OECD/Eurostat",
+            "url": "https://www.oecd.org/en/publications/oslo-manual-2018_9789264304604-en.html",
+            "source_type": "manual",
+            "usage": "Define innovation and adoption indicators before judging technology maturity.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M3",
+            "title": "Structural Analysis Database (STAN) — OECD",
+            "url": "https://www.oecd.org/en/data/datasets/structural-analysis-database.html",
+            "source_type": "data_method",
+            "usage": "Harmonise industry classification, output, value added, labour and productivity comparisons.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M4",
+            "title": "Enterprise Surveys — World Bank",
+            "url": "https://microdata.worldbank.org/collections/enterprise_surveys",
+            "source_type": "survey_method",
+            "usage": "Use firm-level evidence for competition, finance, infrastructure and performance questions.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          }
+        ],
+        "sections": [
+          {
+            "key": "lifecycle",
+            "title": "lifecycle",
+            "executive_takeaway": "行业处于试点向商业化验证阶段，采用程度和技术成熟度仍需进一步验证。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "行业处于试点向商业化验证阶段，采用程度和技术成熟度仍需进一步验证。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          },
+          {
+            "key": "market",
+            "title": "market",
+            "executive_takeaway": "竞争分析必须统一行业分类与口径；来源存在冲突时不得合并不可比市场数据。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "竞争分析必须统一行业分类与口径；来源存在冲突时不得合并不可比市场数据。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          },
+          {
+            "key": "business_model",
+            "title": "business_model",
+            "executive_takeaway": "产业链包括零部件、设备与系统集成；区分客户与付费者。企业SaaS收入依赖订阅、续费与获客成本。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "产业链包括零部件、设备与系统集成；区分客户与付费者。企业SaaS收入依赖订阅、续费与获客成本。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          },
+          {
+            "key": "drivers_risks",
+            "title": "drivers_risks",
+            "executive_takeaway": "监管风险包括适航和许可，技术替代和融资也可能影响商业化。",
+            "findings": [
+              {
+                "title": "合成测试结论",
+                "summary": "监管风险包括适航和许可，技术替代和融资也可能影响商业化。",
+                "evidence": [
+                  "S-fixture"
+                ],
+                "confidence": "medium"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "测试指标",
+                "value": 12.0,
+                "unit": "测试单位",
+                "period": "",
+                "source_ids": [
+                  "S-fixture"
+                ],
+                "is_estimate": false
+              }
+            ],
+            "recommendations": [
+              "复核原始来源并补充证据。"
+            ]
+          }
+        ],
+        "charts": [
+          {
+            "id": "chart-lifecycle",
+            "section_key": "lifecycle",
+            "title": "lifecycle关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-market",
+            "section_key": "market",
+            "title": "market关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-business_model",
+            "section_key": "business_model",
+            "title": "business_model关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-drivers_risks",
+            "section_key": "drivers_risks",
+            "title": "drivers_risks关键指标",
+            "note": "指标口径与来源请见本栏及证据页。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "测试指标"
+                ]
+              },
+              "yAxis": {
+                "type": "value"
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    12.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "S-fixture",
+            "title": "SYNTHETIC TEST DOCUMENT — NOT REAL INDUSTRY DATA",
+            "url": "https://example.com/fixture",
+            "domain": "example.com",
+            "excerpt": "行业处于试点向商业化验证阶段，采用程度和技术成熟度仍需进一步验证。\n竞争分析必须统一行业分类与口径；来源存在冲突时不得合并不可比市场数据。\n产业链包括零部件、设备与系统集成；区分客户与付费者。企业SaaS收入依赖订阅、续费与获客成本。\n监管风险包括适航和许可，技术替代和融资也可能影响商业化。",
+            "published_at": null,
+            "retrieved_at": "2026-09-15T05:35:23.935736+00:00"
+          }
+        ],
+        "methodology": [
+          "M-方法来源只用于任务设计；S-行业来源用于事实判断。",
+          "先获取方法知识并规划任务，再采集行业证据，四个专业 Agent 并行分析。",
+          "分析完成后由图表 Agent 制图，主 Agent 汇总并接受质量评测。"
+        ],
+        "limitations": [
+          "合成测试来源，不可用于实际决策；数据口径冲突需要核查。"
+        ],
+        "session_id": "a93f3e3fea6b492e8d92ad296aa2dcd8",
+        "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data"
+      },
+      "report_evaluation": {
+        "report_id": "f47c93c1c5ca4cafbb94d554df6b35e0",
+        "overall_score": 1.0,
+        "passed": true,
+        "metrics": [
+          {
+            "name": "citation_coverage",
+            "score": 1.0,
+            "detail": "有引用的结论占比"
+          },
+          {
+            "name": "citation_validity",
+            "score": 1.0,
+            "detail": "引用 ID 有效占比"
+          },
+          {
+            "name": "section_completeness",
+            "score": 1.0,
+            "detail": "必需分析栏目完整度"
+          },
+          {
+            "name": "subagent_success",
+            "score": 1.0,
+            "detail": "并行 SubAgent 产出成功率"
+          },
+          {
+            "name": "chart_coverage",
+            "score": 1.0,
+            "detail": "栏目图表覆盖度"
+          },
+          {
+            "name": "uncertainty_disclosure",
+            "score": 1.0,
+            "detail": "显式披露不确定性的结论占比"
+          },
+          {
+            "name": "methodology_grounding",
+            "score": 1.0,
+            "detail": "任务方法来源有效占比"
+          }
+        ],
+        "suggestions": []
+      },
+      "trace": [
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "workflow.started",
+          "elapsed_ms": 0.05,
+          "industry": "动力电池"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.started",
+          "elapsed_ms": 0.058,
+          "agent": "knowledge_acquisition"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.started",
+          "elapsed_ms": 0.083,
+          "agent": "knowledge_acquisition",
+          "span_id": "ea6a8c22216041fab8e4f61090cb3f55"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "llm.started",
+          "elapsed_ms": 0.154,
+          "schema": "MethodologyGuide",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "llm.completed",
+          "elapsed_ms": 13.407,
+          "schema": "MethodologyGuide",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.completed",
+          "elapsed_ms": 13.467,
+          "agent": "knowledge_acquisition",
+          "span_id": "ea6a8c22216041fab8e4f61090cb3f55",
+          "duration_ms": 13.38,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "knowledge.acquired",
+          "elapsed_ms": 13.843,
+          "count": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.completed",
+          "elapsed_ms": 13.882,
+          "agent": "knowledge_acquisition"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.started",
+          "elapsed_ms": 13.885,
+          "agent": "task_planning"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.started",
+          "elapsed_ms": 13.923,
+          "agent": "task_planning",
+          "span_id": "6df320bf21d54f03a4501a39103cc5a0"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "llm.started",
+          "elapsed_ms": 13.948,
+          "schema": "ResearchPlan",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "llm.completed",
+          "elapsed_ms": 29.185,
+          "schema": "ResearchPlan",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.completed",
+          "elapsed_ms": 29.247,
+          "agent": "task_planning",
+          "span_id": "6df320bf21d54f03a4501a39103cc5a0",
+          "duration_ms": 15.32,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "plan.ready",
+          "elapsed_ms": 29.652,
+          "tasks": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.completed",
+          "elapsed_ms": 29.709,
+          "agent": "task_planning"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.started",
+          "elapsed_ms": 29.735,
+          "agent": "source_collector",
+          "span_id": "5ae1be43f03646e38cb423d4e47df076"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.completed",
+          "elapsed_ms": 29.76,
+          "agent": "source_collector",
+          "span_id": "5ae1be43f03646e38cb423d4e47df076",
+          "duration_ms": 0.04,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "sources.collected",
+          "elapsed_ms": 29.838,
+          "count": 1
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.started",
+          "elapsed_ms": 29.899,
+          "agent": "lifecycle"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.started",
+          "elapsed_ms": 29.91,
+          "agent": "lifecycle",
+          "span_id": "9871e383291d483aae37f105e036912f"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "llm.started",
+          "elapsed_ms": 29.939,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.started",
+          "elapsed_ms": 29.953,
+          "agent": "market"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.started",
+          "elapsed_ms": 29.961,
+          "agent": "market",
+          "span_id": "dc484eeedae34dce8a982610cd1c6313"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "llm.started",
+          "elapsed_ms": 29.974,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.started",
+          "elapsed_ms": 29.983,
+          "agent": "business_model"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.started",
+          "elapsed_ms": 29.989,
+          "agent": "business_model",
+          "span_id": "4c990fb83bc14f3280d8316f7a4dae11"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "llm.started",
+          "elapsed_ms": 30.0,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.started",
+          "elapsed_ms": 30.006,
+          "agent": "drivers_risks"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.started",
+          "elapsed_ms": 30.011,
+          "agent": "drivers_risks",
+          "span_id": "d7c560699d4b49b29a113ae27e9c7596"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "llm.started",
+          "elapsed_ms": 30.021,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "llm.completed",
+          "elapsed_ms": 44.443,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.completed",
+          "elapsed_ms": 44.483,
+          "agent": "lifecycle",
+          "span_id": "9871e383291d483aae37f105e036912f",
+          "duration_ms": 14.57,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.completed",
+          "elapsed_ms": 44.894,
+          "agent": "lifecycle",
+          "title": "lifecycle"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "llm.completed",
+          "elapsed_ms": 44.989,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.completed",
+          "elapsed_ms": 45.008,
+          "agent": "market",
+          "span_id": "dc484eeedae34dce8a982610cd1c6313",
+          "duration_ms": 15.05,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.completed",
+          "elapsed_ms": 45.198,
+          "agent": "market",
+          "title": "market"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "llm.completed",
+          "elapsed_ms": 45.266,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.completed",
+          "elapsed_ms": 45.277,
+          "agent": "business_model",
+          "span_id": "4c990fb83bc14f3280d8316f7a4dae11",
+          "duration_ms": 15.29,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.completed",
+          "elapsed_ms": 45.44,
+          "agent": "business_model",
+          "title": "business_model"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "llm.completed",
+          "elapsed_ms": 45.513,
+          "schema": "Section",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.completed",
+          "elapsed_ms": 45.523,
+          "agent": "drivers_risks",
+          "span_id": "d7c560699d4b49b29a113ae27e9c7596",
+          "duration_ms": 15.51,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.completed",
+          "elapsed_ms": 45.682,
+          "agent": "drivers_risks",
+          "title": "drivers_risks"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.started",
+          "elapsed_ms": 45.771,
+          "agent": "chart"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.started",
+          "elapsed_ms": 45.826,
+          "agent": "chart",
+          "span_id": "e7a8e89b773448388a3f5746b78b649f"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.completed",
+          "elapsed_ms": 45.925,
+          "agent": "chart",
+          "span_id": "e7a8e89b773448388a3f5746b78b649f",
+          "duration_ms": 0.12,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.completed",
+          "elapsed_ms": 46.045,
+          "agent": "chart",
+          "count": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.started",
+          "elapsed_ms": 46.047,
+          "agent": "main_agent"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.started",
+          "elapsed_ms": 46.076,
+          "agent": "main_agent",
+          "span_id": "e5ed7d848bc24666b2b85c2070f39456"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "llm.started",
+          "elapsed_ms": 46.163,
+          "schema": "SynthesisResult",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "llm.completed",
+          "elapsed_ms": 59.815,
+          "schema": "SynthesisResult",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "span.completed",
+          "elapsed_ms": 59.838,
+          "agent": "main_agent",
+          "span_id": "e5ed7d848bc24666b2b85c2070f39456",
+          "duration_ms": 13.78,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "agent.completed",
+          "elapsed_ms": 60.066,
+          "agent": "main_agent"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "workflow.completed",
+          "elapsed_ms": 60.123,
+          "report_id": "f47c93c1c5ca4cafbb94d554df6b35e0"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-conflicting_data",
+          "event": "context.saved",
+          "elapsed_ms": 60.166,
+          "session_id": "a93f3e3fea6b492e8d92ad296aa2dcd8",
+          "enabled": false
+        }
+      ],
+      "latency_ms": 60.66
+    },
+    {
+      "case_id": "missing_evidence",
+      "question": {
+        "industry": "未知新兴产业",
+        "region": "中国",
+        "horizon": "未来3-5年",
+        "anchor_sites": [],
+        "question": "没有行业数据时能否给出市场规模和投资结论？",
+        "session_id": null,
+        "use_memory": false
+      },
+      "expected_quality": "明确缺乏事实证据；进入演示或拒绝给出事实性数字；披露低置信度；提供补充证据方向。",
+      "execution_mode": "fixture",
+      "score": 1.0,
+      "passed": true,
+      "checks": {
+        "required_sections": true,
+        "method_traceability": true,
+        "citation_integrity": true,
+        "numeric_provenance": true,
+        "limitations": true,
+        "safe_abstention": true
+      },
+      "trajectory": {
+        "span_success": 1.0,
+        "dependency_order": 1.0,
+        "parallel_overlap": 1.0
+      },
+      "failures": [],
+      "actual_report": {
+        "report_id": "4a4f2186925e42a38c63bf4c59394433",
+        "industry": "未知新兴产业",
+        "region": "中国",
+        "horizon": "未来3-5年",
+        "generated_at": "2026-09-15T05:35:23.998479+00:00",
+        "mode": "demo",
+        "executive_summary": "未知新兴产业行业研究演示：方法知识已用于任务规划，行业结论仍待外部证据验证。",
+        "lifecycle_stage": "待证据判断",
+        "lifecycle_score": 50.0,
+        "plan": {
+          "industry_definition": "界定中国未知新兴产业的产品、客户、地区和统计周期。",
+          "value_chain": [
+            "投入与技术",
+            "产品与服务",
+            "渠道与集成",
+            "终端客户",
+            "售后与配套"
+          ],
+          "hypotheses": [
+            "需求是否进入规模扩散阶段",
+            "利润由价值链哪一环获取",
+            "政策或技术变化是否改变竞争格局"
+          ],
+          "tasks": [
+            "Determine lifecycle stage from adoption, diffusion and maturity indicators.",
+            "Determine market scope, segments, growth and competitive forces.",
+            "Map value chain, buyer, payer, revenue, cost and unit economics.",
+            "Test policy, demand, technology and financial drivers; build scenarios."
+          ],
+          "evidence_gaps": [
+            "同口径历史市场数据",
+            "企业财务与客户数据",
+            "可验证的政策与技术时间线"
+          ],
+          "task_specs": [
+            {
+              "key": "lifecycle",
+              "objective": "Determine lifecycle stage from adoption, diffusion and maturity indicators.",
+              "method_ids": [
+                "M2",
+                "M3"
+              ],
+              "evidence_needed": [
+                "adoption series",
+                "technology standards",
+                "firm entry and exit"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "market",
+              "objective": "Determine market scope, segments, growth and competitive forces.",
+              "method_ids": [
+                "M1",
+                "M3"
+              ],
+              "evidence_needed": [
+                "industry classification",
+                "output and value added",
+                "rival and substitute evidence"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "business_model",
+              "objective": "Map value chain, buyer, payer, revenue, cost and unit economics.",
+              "method_ids": [
+                "M1",
+                "M4"
+              ],
+              "evidence_needed": [
+                "revenue and cost data",
+                "buyer and payer interviews",
+                "firm performance"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            },
+            {
+              "key": "drivers_risks",
+              "objective": "Test policy, demand, technology and financial drivers; build scenarios.",
+              "method_ids": [
+                "M2",
+                "M4"
+              ],
+              "evidence_needed": [
+                "policy documents",
+                "demand indicators",
+                "scenario assumptions"
+              ],
+              "depends_on": [
+                "scope",
+                "industry_sources"
+              ]
+            }
+          ]
+        },
+        "methodology_guide": {
+          "objective": "为中国未知新兴产业研究设计可复核的任务与证据标准",
+          "principles": [
+            {
+              "name": "先界定行业口径",
+              "instruction": "定义产品、客户、地区、分类代码和统计周期，再比较市场数据。",
+              "method_ids": [
+                "M3"
+              ]
+            },
+            {
+              "name": "竞争结构不等于竞品名单",
+              "instruction": "分别调查现有竞争、潜在进入、替代品、买方和供应方议价能力。",
+              "method_ids": [
+                "M1"
+              ]
+            },
+            {
+              "name": "技术成熟度须有观测指标",
+              "instruction": "区分发明、实际应用和扩散；寻找采用率、标准化和企业创新证据。",
+              "method_ids": [
+                "M2"
+              ]
+            },
+            {
+              "name": "商业模式须回到企业层面",
+              "instruction": "核查客户、付费者、成本、利润、融资约束及企业经营表现。",
+              "method_ids": [
+                "M4"
+              ]
+            }
+          ],
+          "workflow": [
+            "方法知识获取与适用性筛选",
+            "界定行业边界、指标口径和待验证假设",
+            "采集具体行业事实并登记来源",
+            "并行分析生命周期、市场竞争、商业模式、驱动与风险",
+            "根据已验证指标制图、主 Agent 汇总并质量评测"
+          ],
+          "source_ids": [
+            "M3",
+            "M1",
+            "M2",
+            "M4"
+          ],
+          "limitations": [
+            "目录摘要仅用于方法规划；具体行业事实必须另找 S- 来源。"
+          ]
+        },
+        "knowledge_sources": [
+          {
+            "id": "M1",
+            "title": "The Five Competitive Forces That Shape Strategy — Michael E. Porter (2008)",
+            "url": "https://hbr.org/2008/01/the-five-competitive-forces-that-shape-strategy",
+            "source_type": "book_or_article",
+            "usage": "Use five-forces questions to map rivalry, entrants, substitutes, buyers and suppliers.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M2",
+            "title": "Oslo Manual 2018 — OECD/Eurostat",
+            "url": "https://www.oecd.org/en/publications/oslo-manual-2018_9789264304604-en.html",
+            "source_type": "manual",
+            "usage": "Define innovation and adoption indicators before judging technology maturity.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M3",
+            "title": "Structural Analysis Database (STAN) — OECD",
+            "url": "https://www.oecd.org/en/data/datasets/structural-analysis-database.html",
+            "source_type": "data_method",
+            "usage": "Harmonise industry classification, output, value added, labour and productivity comparisons.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          },
+          {
+            "id": "M4",
+            "title": "Enterprise Surveys — World Bank",
+            "url": "https://microdata.worldbank.org/collections/enterprise_surveys",
+            "source_type": "survey_method",
+            "usage": "Use firm-level evidence for competition, finance, infrastructure and performance questions.",
+            "acquisition": "catalog",
+            "excerpt": ""
+          }
+        ],
+        "sections": [
+          {
+            "key": "lifecycle",
+            "title": "发展阶段",
+            "executive_takeaway": "用采用率、标准化、企业进入退出和增长曲线验证所处阶段。",
+            "findings": [
+              {
+                "title": "等待行业证据",
+                "summary": "演示模式：这是待验证的分析任务，不是关于该行业的事实判断。",
+                "evidence": [],
+                "confidence": "low"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "证据准备度",
+                "value": 25.0,
+                "unit": "分析性评分",
+                "period": "",
+                "source_ids": [],
+                "is_estimate": true
+              },
+              {
+                "name": "待验证程度",
+                "value": 75.0,
+                "unit": "分析性评分",
+                "period": "",
+                "source_ids": [],
+                "is_estimate": true
+              }
+            ],
+            "recommendations": [
+              "补充同口径、可回溯的行业数据和企业材料。"
+            ]
+          },
+          {
+            "key": "market",
+            "title": "市场与竞争",
+            "executive_takeaway": "先统一市场口径，再调查细分需求和五种竞争力量。",
+            "findings": [
+              {
+                "title": "等待行业证据",
+                "summary": "演示模式：这是待验证的分析任务，不是关于该行业的事实判断。",
+                "evidence": [],
+                "confidence": "low"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "证据准备度",
+                "value": 25.0,
+                "unit": "分析性评分",
+                "period": "",
+                "source_ids": [],
+                "is_estimate": true
+              },
+              {
+                "name": "待验证程度",
+                "value": 75.0,
+                "unit": "分析性评分",
+                "period": "",
+                "source_ids": [],
+                "is_estimate": true
+              }
+            ],
+            "recommendations": [
+              "补充同口径、可回溯的行业数据和企业材料。"
+            ]
+          },
+          {
+            "key": "business_model",
+            "title": "商业模式",
+            "executive_takeaway": "拆分客户、付费者、收入、成本及单位经济性。",
+            "findings": [
+              {
+                "title": "等待行业证据",
+                "summary": "演示模式：这是待验证的分析任务，不是关于该行业的事实判断。",
+                "evidence": [],
+                "confidence": "low"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "证据准备度",
+                "value": 25.0,
+                "unit": "分析性评分",
+                "period": "",
+                "source_ids": [],
+                "is_estimate": true
+              },
+              {
+                "name": "待验证程度",
+                "value": 75.0,
+                "unit": "分析性评分",
+                "period": "",
+                "source_ids": [],
+                "is_estimate": true
+              }
+            ],
+            "recommendations": [
+              "补充同口径、可回溯的行业数据和企业材料。"
+            ]
+          },
+          {
+            "key": "drivers_risks",
+            "title": "驱动与风险",
+            "executive_takeaway": "识别政策、需求、技术、资本指标，并设置三种情景。",
+            "findings": [
+              {
+                "title": "等待行业证据",
+                "summary": "演示模式：这是待验证的分析任务，不是关于该行业的事实判断。",
+                "evidence": [],
+                "confidence": "low"
+              }
+            ],
+            "metrics": [
+              {
+                "name": "证据准备度",
+                "value": 25.0,
+                "unit": "分析性评分",
+                "period": "",
+                "source_ids": [],
+                "is_estimate": true
+              },
+              {
+                "name": "待验证程度",
+                "value": 75.0,
+                "unit": "分析性评分",
+                "period": "",
+                "source_ids": [],
+                "is_estimate": true
+              }
+            ],
+            "recommendations": [
+              "补充同口径、可回溯的行业数据和企业材料。"
+            ]
+          }
+        ],
+        "charts": [
+          {
+            "id": "chart-lifecycle",
+            "section_key": "lifecycle",
+            "title": "发展阶段关键指标",
+            "note": "分析性评分，非市场统计。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "证据准备度",
+                  "待验证程度"
+                ]
+              },
+              "yAxis": {
+                "type": "value",
+                "max": 100
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    25.0,
+                    75.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-market",
+            "section_key": "market",
+            "title": "市场与竞争关键指标",
+            "note": "分析性评分，非市场统计。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "证据准备度",
+                  "待验证程度"
+                ]
+              },
+              "yAxis": {
+                "type": "value",
+                "max": 100
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    25.0,
+                    75.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-business_model",
+            "section_key": "business_model",
+            "title": "商业模式关键指标",
+            "note": "分析性评分，非市场统计。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "证据准备度",
+                  "待验证程度"
+                ]
+              },
+              "yAxis": {
+                "type": "value",
+                "max": 100
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    25.0,
+                    75.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "chart-drivers_risks",
+            "section_key": "drivers_risks",
+            "title": "驱动与风险关键指标",
+            "note": "分析性评分，非市场统计。",
+            "option": {
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "grid": {
+                "left": 50,
+                "right": 20,
+                "top": 30,
+                "bottom": 50
+              },
+              "xAxis": {
+                "type": "category",
+                "data": [
+                  "证据准备度",
+                  "待验证程度"
+                ]
+              },
+              "yAxis": {
+                "type": "value",
+                "max": 100
+              },
+              "series": [
+                {
+                  "type": "bar",
+                  "data": [
+                    25.0,
+                    75.0
+                  ],
+                  "itemStyle": {
+                    "color": "#38bdf8"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "sources": [],
+        "methodology": [
+          "M-方法来源只用于任务设计；S-行业来源用于事实判断。",
+          "先获取方法知识并规划任务，再采集行业证据，四个专业 Agent 并行分析。",
+          "分析完成后由图表 Agent 制图，主 Agent 汇总并接受质量评测。"
+        ],
+        "limitations": [
+          "演示模式未获得可用于行业事实判断的材料，图表仅展示分析性评分。"
+        ],
+        "session_id": "9c8c7ecf55304cd88c9a32a3956afa74",
+        "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence"
+      },
+      "report_evaluation": {
+        "report_id": "4a4f2186925e42a38c63bf4c59394433",
+        "overall_score": 0.78,
+        "passed": false,
+        "metrics": [
+          {
+            "name": "citation_coverage",
+            "score": 0.0,
+            "detail": "有引用的结论占比"
+          },
+          {
+            "name": "citation_validity",
+            "score": 1.0,
+            "detail": "引用 ID 有效占比"
+          },
+          {
+            "name": "section_completeness",
+            "score": 1.0,
+            "detail": "必需分析栏目完整度"
+          },
+          {
+            "name": "subagent_success",
+            "score": 1.0,
+            "detail": "并行 SubAgent 产出成功率"
+          },
+          {
+            "name": "chart_coverage",
+            "score": 1.0,
+            "detail": "栏目图表覆盖度"
+          },
+          {
+            "name": "uncertainty_disclosure",
+            "score": 1.0,
+            "detail": "显式披露不确定性的结论占比"
+          },
+          {
+            "name": "methodology_grounding",
+            "score": 1.0,
+            "detail": "任务方法来源有效占比"
+          }
+        ],
+        "suggestions": [
+          "补充事实结论的来源引用。",
+          "当前无外部证据；配置 TAVILY_API_KEY 或传入可访问的锚定 URL。"
+        ]
+      },
+      "trace": [
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "workflow.started",
+          "elapsed_ms": 0.039,
+          "industry": "未知新兴产业"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.started",
+          "elapsed_ms": 0.045,
+          "agent": "knowledge_acquisition"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.started",
+          "elapsed_ms": 0.067,
+          "agent": "knowledge_acquisition",
+          "span_id": "ffaecc51aebc4486a142bc5d196c806c"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "llm.started",
+          "elapsed_ms": 0.123,
+          "schema": "MethodologyGuide",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "llm.completed",
+          "elapsed_ms": 13.449,
+          "schema": "MethodologyGuide",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.completed",
+          "elapsed_ms": 13.516,
+          "agent": "knowledge_acquisition",
+          "span_id": "ffaecc51aebc4486a142bc5d196c806c",
+          "duration_ms": 13.45,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "knowledge.acquired",
+          "elapsed_ms": 13.946,
+          "count": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.completed",
+          "elapsed_ms": 14.0,
+          "agent": "knowledge_acquisition"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.started",
+          "elapsed_ms": 14.005,
+          "agent": "task_planning"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.started",
+          "elapsed_ms": 14.057,
+          "agent": "task_planning",
+          "span_id": "5004ad2a813645059c5353e52aa54d68"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "llm.started",
+          "elapsed_ms": 14.082,
+          "schema": "ResearchPlan",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "llm.completed",
+          "elapsed_ms": 29.757,
+          "schema": "ResearchPlan",
+          "fixture": true
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.completed",
+          "elapsed_ms": 29.805,
+          "agent": "task_planning",
+          "span_id": "5004ad2a813645059c5353e52aa54d68",
+          "duration_ms": 15.77,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "plan.ready",
+          "elapsed_ms": 30.151,
+          "tasks": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.completed",
+          "elapsed_ms": 30.29,
+          "agent": "task_planning"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.started",
+          "elapsed_ms": 30.315,
+          "agent": "source_collector",
+          "span_id": "fd2c2b1337ae4f1b9d954571d4f9f762"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.completed",
+          "elapsed_ms": 30.32,
+          "agent": "source_collector",
+          "span_id": "fd2c2b1337ae4f1b9d954571d4f9f762",
+          "duration_ms": 0.02,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "sources.collected",
+          "elapsed_ms": 30.387,
+          "count": 0
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.started",
+          "elapsed_ms": 30.455,
+          "agent": "lifecycle",
+          "span_id": "653025d4d7ae4cc9830f05407a8714c8"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.demo",
+          "elapsed_ms": 30.457,
+          "agent": "lifecycle"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.completed",
+          "elapsed_ms": 30.459,
+          "agent": "lifecycle",
+          "span_id": "653025d4d7ae4cc9830f05407a8714c8",
+          "duration_ms": 0.01,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.completed",
+          "elapsed_ms": 30.519,
+          "agent": "lifecycle",
+          "title": "发展阶段"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.started",
+          "elapsed_ms": 30.528,
+          "agent": "market",
+          "span_id": "6a3547f7fe814a20abdda250f2702d65"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.demo",
+          "elapsed_ms": 30.529,
+          "agent": "market"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.completed",
+          "elapsed_ms": 30.531,
+          "agent": "market",
+          "span_id": "6a3547f7fe814a20abdda250f2702d65",
+          "duration_ms": 0.01,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.completed",
+          "elapsed_ms": 30.58,
+          "agent": "market",
+          "title": "市场与竞争"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.started",
+          "elapsed_ms": 30.586,
+          "agent": "business_model",
+          "span_id": "a38f4d3b58904660bd02f055931ae32a"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.demo",
+          "elapsed_ms": 30.587,
+          "agent": "business_model"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.completed",
+          "elapsed_ms": 30.589,
+          "agent": "business_model",
+          "span_id": "a38f4d3b58904660bd02f055931ae32a",
+          "duration_ms": 0.0,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.completed",
+          "elapsed_ms": 30.632,
+          "agent": "business_model",
+          "title": "商业模式"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.started",
+          "elapsed_ms": 30.638,
+          "agent": "drivers_risks",
+          "span_id": "a64f5ddd213d42c1af1cd5c97ee944e7"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.demo",
+          "elapsed_ms": 30.639,
+          "agent": "drivers_risks"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.completed",
+          "elapsed_ms": 30.641,
+          "agent": "drivers_risks",
+          "span_id": "a64f5ddd213d42c1af1cd5c97ee944e7",
+          "duration_ms": 0.0,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.completed",
+          "elapsed_ms": 30.682,
+          "agent": "drivers_risks",
+          "title": "驱动与风险"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.started",
+          "elapsed_ms": 30.683,
+          "agent": "chart"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.started",
+          "elapsed_ms": 30.689,
+          "agent": "chart",
+          "span_id": "ddacf89618474b8ebebaea02e7538c38"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.completed",
+          "elapsed_ms": 30.718,
+          "agent": "chart",
+          "span_id": "ddacf89618474b8ebebaea02e7538c38",
+          "duration_ms": 0.03,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.completed",
+          "elapsed_ms": 30.765,
+          "agent": "chart",
+          "count": 4
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.started",
+          "elapsed_ms": 30.767,
+          "agent": "main_agent"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.started",
+          "elapsed_ms": 30.773,
+          "agent": "main_agent",
+          "span_id": "5264e8b85e97481881e13c16fb4096bd"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "span.completed",
+          "elapsed_ms": 30.781,
+          "agent": "main_agent",
+          "span_id": "5264e8b85e97481881e13c16fb4096bd",
+          "duration_ms": 0.01,
+          "status": "ok"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "agent.completed",
+          "elapsed_ms": 30.829,
+          "agent": "main_agent"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "workflow.completed",
+          "elapsed_ms": 30.854,
+          "report_id": "4a4f2186925e42a38c63bf4c59394433"
+        },
+        {
+          "trace_id": "eval-fe171529b21b4b49b935e957db051ce1-missing_evidence",
+          "event": "context.saved",
+          "elapsed_ms": 30.874,
+          "session_id": "9c8c7ecf55304cd88c9a32a3956afa74",
+          "enabled": false
+        }
+      ],
+      "latency_ms": 31.05
+    }
+  ],
+  "artifact": "eval_results\\fe171529b21b4b49b935e957db051ce1.json"
+}
